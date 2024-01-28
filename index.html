@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
@@ -32,9 +33,14 @@
             color: #333;
         }
 
+        p {
+            color: #555;
+        }
+
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
 
         li {
@@ -46,6 +52,37 @@
             padding: 10px;
             background-color: #333;
             color: #fff;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skills div {
+            background-color: #4CAF50;
+            color: white;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .projects {
+            margin-top: 20px;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 600px) {
+            section {
+                margin: 10px;
+            }
         }
     </style>
 </head>
@@ -63,29 +100,43 @@
 
     <section>
         <h2>Skills</h2>
-        <ul>
-            <li>Firebase</li>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Python</li>
-            <li>C and C++ (OOPs)</li>
-        </ul>
+        <div class="skills">
+            <div>Firebase</div>
+            <div>React</div>
+            <div>JavaScript</div>
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Python</div>
+            <div>C and C++ (OOPs)</div>
+        </div>
     </section>
 
-    <section>
+    <section class="education">
         <h2>Education</h2>
         <ul>
             <li>VIT Chennai - Sophomore</li>
-            <li>CGPA: 8.95</li>
+            <li>CGPA: 8.93</li>
             <li>12th Board: 97.6%</li>
             <li>10th Board: 96.8%</li>
         </ul>
     </section>
 
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </section>
+
     <footer>
-        <p>Contact me: kanishksharma2609@gmail.com</p>
+        <a href="mailto:kanishksharma2609@gmail.com">Contact me: kanishksharma2609@gmail.com</a>
+        <a href="https://github.com/Kanishk-S06"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kanishk-sharma-b7a46424b/"><i class="fa-brands fa-linkedin"></i></a>
     </footer>
 
 </body>
